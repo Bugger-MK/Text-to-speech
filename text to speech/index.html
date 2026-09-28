@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+
+    
+  <h1>Read Aloud</h1>
+
+  <p class="sub">Type or paste text, pick a voice, and press Speak.</p>
+
+  <div class="card">
+        <textarea id="text" aria-label="Text to read">Hello! This is a text to speech demo built with plain HTML, CSS and JavaScript.</textarea>
+        <div id="reader" aria-live="off"></div>
+
+        <label for="voice">Voice</label>
+        <select id="voice"></select>
+
+        <div class="row">
+
+
+            <div>
+                <label for="rate">Speed: <span id="rateVal">1.0</span></label>
+                <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+            </div>
+
+
+            <div>
+                <label for="pitch">Pitch: <span id="pitchVal">1.0</span></label>
+                <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+            </div>
+
+            
+        </div>
+
+        <div class="buttons">
+            <button class="primary" id="speak">Speak</button>
+            <button id="pause">Pause</button>
+            <button id="resume">Resume</button>
+            <button id="stop">Stop</button>
+            </div>
+        <div id="status" role="status"></div>
+  </div>
+
+
+</body>
+</html>
